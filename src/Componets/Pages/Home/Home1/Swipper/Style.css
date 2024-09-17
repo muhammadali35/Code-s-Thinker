@@ -1,0 +1,18 @@
+.swiper-scrollbar {
+    background-color: rgba(255, 255, 255, 0.2); /* Track color */
+    border-radius: 10px;
+  }
+  
+  .swiper-scrollbar-drag {
+    background-color: white; /* Drag color */
+    border-radius: 10px;
+  }
+  .swiper-pagination-bullet {
+    width: 16px; /* Adjust width as needed */
+    height: 16px; /* Adjust height as needed */
+    background: rgba(255, 255, 255, 0.7); /* Bullet color */
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: white; /* Active bullet color */
+  }

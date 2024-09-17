@@ -1,0 +1,47 @@
+/* Define the slide-in animation */
+@keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Define the slide-out animation */
+  @keyframes slideOutToLeft {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+  /* Initial styles for page-container */
+  .page-container {
+    position: absolute; /* Position all containers in the same place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Styles when the page is active */
+  .page-container.active {
+    opacity: 1;
+    animation: slideInFromLeft 0.5s forwards;
+  }
+  
+  /* Styles when the page is inactive */
+  .page-container.inactive {
+    opacity: 0;
+    animation: slideOutToLeft 0.5s forwards;
+  }
+  
+  
